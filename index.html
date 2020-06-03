@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <!-- This is the head section of the HTML about page -->
+  <head>
+    <!-- <meta> tags always go inside the <head> element, and are typically used to specify character set, page description, keywords, author of the document, and viewport settings. -->
+    <meta charset="utf-8">
+    <!-- This below meta tag is for the view port setting -->
+    <meta name="viewport" content="width=device-width">
+    <!-- The above meta tag has it's "width" as device-width, since the page is targeted to be responsive. -->
+    <!-- The below meta tags are used for positioning and writing-->
+    <meta name="description" content="Affordable and professional web design">
+	  <meta name="keywords" content="web design, affordable web design, professional web design">
+  	<meta name="author" content="Brad Traversy">
+    <title>Acme Web Deisgn | Welcome</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <header>
+    <!-- We are using a class since it can be used indentify more than one element -->
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">Acme</span> Web Design</h1>
+        </div>
+        <nav>
+        <!-- We are using an Unordered list here in the nav bar which enables us to redirect us to different webpages -->
+          <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- This is the end of the header -->
+    <!-- The below sections Newsletter and Showcase are identified with "id's" because these elements need to be identified only once and are unique-->
+    <section id="showcase">
+      <div class="container">
+        <h1>Affordable Professional Web Design</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu luctus ipsum, rhoncus semper magna. Nulla nec magna sit amet sem interdum condimentum.</p>
+      </div>
+    </section>
+
+    <section id="newsletter">
+      <div class="container">
+        <h1>Subscribe To Our Newsletter</h1>
+        <form>
+          <input type="email" placeholder="Enter Email...">
+          <button type="submit" class="button_1">Subscribe</button>
+        </form>
+      </div>
+    </section>
+<!-- The below id names boxes has 3 images to be attached-->
+    <section id="boxes">
+      <div class="container">
+        <div class="box">
+        <!-- We use the class box since we use the elements more than once-->
+        <!-- The src is used to retrieve the image from another loaction-->
+          <img src="./img/logo_html.png">
+          <h3>HTML5 Markup</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+        </div>
+        <div class="box">
+        <!-- We use the class box since we use the elements more than once-->
+        <!-- The src is used to retrieve the image from another loaction-->
+          <img src="./img/logo_css.png">
+          <h3>CSS3 Styling</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+        </div>
+        <div class="box">
+        <!-- We use the class box since we use the elements more than once-->
+        <!-- The src is used to retrieve the image from another loaction-->
+          <img src="./img/logo_brush.png">
+          <h3>Graphic Design</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+        </div>
+      </div>
+    </section>
+  <!-- The footer section has the Copyright part and the symbol can be induced by using an &copy -->
+    <footer>
+      <p>Acme Web Deisgn, Copyright &copy; 2017</p>
+    </footer>
+  </body>
+</html>
